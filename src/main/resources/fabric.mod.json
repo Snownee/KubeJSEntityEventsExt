@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "kubejs-entity-events-ext",
+  "version": "${version}",
+
+  "name": "KubeJS Entity Events Extension",
+  "description": "Adds the missing KubeJS entity events",
+  "authors": ["Snownee"],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/kubejs-entity-events-extension",
+    "sources": "https://github.com/Snownee/KubeJSEntityEventsExt",
+    "issues": "https://github.com/Snownee/KubeJSEntityEventsExt/issues"
+  },
+
+  "license": "GNU LGPLv3",
+
+  "entrypoints": {
+    "main": [
+      "snownee.kubejs_entity_events.KubeJSEEXMod"
+    ]
+  },
+  "mixins": ["kubejs-entity-events-ext.mixins.json"],
+
+  "depends": {
+    "fabric-api": "*",
+    "kubejs": "*",
+    "minecraft": ">=1.19.2",
+    "java": ">=17"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/rRBvGkz"
+      }
+    }
+  }
+}
