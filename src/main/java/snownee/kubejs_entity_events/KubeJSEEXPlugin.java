@@ -22,7 +22,7 @@ public class KubeJSEEXPlugin extends KubeJSPlugin {
 		ENTITY_WORLD_CHANGED = EntityEvents.GROUP.server("worldChanged", () -> EntityWorldChangedEventJS.class).extra(EntityEvents.SUPPORTS_ENTITY_TYPE);
 		PLAYER_WORLD_CHANGED = PlayerEvents.GROUP.server("worldChanged", () -> PlayerWorldChangedEventJS.class);
 		KILLED_OTHER_ENTITY = EntityEvents.GROUP.server("killedOtherEntity", () -> KilledOtherEntityEventJS.class).extra(EntityEvents.SUPPORTS_ENTITY_TYPE);
-		ALLOW_ELYTRA_FLIGHT = EntityEvents.GROUP.server("allowElytraFlight", () -> AllowElytraFlightEventJS.class).extra(EntityEvents.SUPPORTS_ENTITY_TYPE).cancelable();
+		ALLOW_ELYTRA_FLIGHT = EntityEvents.GROUP.common("allowElytraFlight", () -> AllowElytraFlightEventJS.class).extra(EntityEvents.SUPPORTS_ENTITY_TYPE).hasResult();
 	}
 
 }

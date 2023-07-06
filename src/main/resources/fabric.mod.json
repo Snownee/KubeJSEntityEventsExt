@@ -23,7 +23,7 @@
 
   "depends": {
     "fabric-api": "*",
-    "kubejs": "*",
+    "kubejs": ">=1902.2.1-",
     "minecraft": ">=1.19.2",
     "java": ">=17"
   },
