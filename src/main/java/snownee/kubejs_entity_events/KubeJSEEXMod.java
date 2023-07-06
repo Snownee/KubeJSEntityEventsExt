@@ -1,7 +1,8 @@
 package snownee.kubejs_entity_events;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+
+import com.mojang.logging.LogUtils;
 
 import dev.latvian.mods.kubejs.script.ScriptType;
 import net.fabricmc.api.ModInitializer;
@@ -11,7 +12,7 @@ import net.fabricmc.fabric.api.entity.event.v1.ServerEntityWorldChangeEvents;
 
 public class KubeJSEEXMod implements ModInitializer {
 
-	public static final Logger LOGGER = LogManager.getLogger("KubeJSEEE");
+	public static final Logger LOGGER = LogUtils.getLogger();
 
 	@Override
 	public void onInitialize() {

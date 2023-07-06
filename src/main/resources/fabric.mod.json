@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "kubejs-entity-events-ext",
+  "id": "kubejs_entity_events_ext",
   "version": "${version}",
 
   "name": "KubeJS Entity Events Extension",
@@ -19,7 +19,7 @@
       "snownee.kubejs_entity_events.KubeJSEEXMod"
     ]
   },
-  "mixins": ["kubejs-entity-events-ext.mixins.json"],
+  "mixins": ["kubejs_entity_events_ext.mixins.json"],
 
   "depends": {
     "fabric-api": "*",
