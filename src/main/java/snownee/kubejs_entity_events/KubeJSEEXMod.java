@@ -34,7 +34,7 @@ public class KubeJSEEXMod implements ModInitializer {
 		EntityElytraEvents.ALLOW.register(entity -> {
 			if (KubeJSEEXPlugin.ALLOW_ELYTRA_FLIGHT == null || !KubeJSEEXPlugin.ALLOW_ELYTRA_FLIGHT.hasListeners())
 				return true;
-			return KubeJSEEXPlugin.ALLOW_ELYTRA_FLIGHT.post(ScriptType.of(entity), new AllowElytraFlightEventJS(entity)).pass();
+			return KubeJSEEXPlugin.ALLOW_ELYTRA_FLIGHT.post(entity, new AllowElytraFlightEventJS(entity)).pass();
 		});
 	}
 
